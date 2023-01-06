@@ -1,0 +1,49 @@
+.nothing {
+  grid-area: transparent;
+}
+.slidein {
+  grid-area: slidein;
+  height: 100vh;
+  padding: 3rem;
+  background: hsl(36, 100%, 99%);
+  transition: 2s;
+}
+.popup {
+  position: absolute;
+  top: 0;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-areas: "transparent slidein";
+  overflow-x: hidden;
+  backdrop-filter: blur(1px);
+  background: hsla(200, 35%, 13%, 0.4);
+  transition: 2s;
+  
+}
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+  transition: transform 0.3s ease;
+}
+.mobile-links a {
+  margin-top: 2rem;
+  font-weight: 400;
+  font-size: 20px;
+}
+.cancel {
+  display: flex;
+  justify-content: end;
+}
+
+/* Javascript classes */
+.left {
+  transform: translateX(200%);
+  transition: 2s;
+}
+.hide {
+  display: none;
+  transition: 2s;
+}
