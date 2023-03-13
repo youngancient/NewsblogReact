@@ -42,7 +42,7 @@ My vite-template-react
 To get a local copy of the code, clone it using git:
 
 ```
-git clone https://github.com/SafdarJamal/vite-template-react.git
+git clone https://github.com/youngancient/newsblogreact.git
 cd newsblogreact
 ```
 
