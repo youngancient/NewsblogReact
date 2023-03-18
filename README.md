@@ -11,9 +11,6 @@
 
 
 ## Folder Structure
-
-No configuration or complicated folder structures, just the files you need to build your app:
-
 ```
 My vite-template-react
 ├── node_modules
