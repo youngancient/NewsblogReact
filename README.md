@@ -12,26 +12,26 @@
 
 ## Folder Structure
 ```
-My vite-template-react
-├── node_modules
-├── public
-│   ├── favicon.svg
-│   └── assets
-      ├── images,svgs
-└── src
-    ├── Components
-       ├── All-components
-    ├── Utils
-        ├── Data-utils
-    ├── App.css
-    ├── App.jsx
-    ├── index.css
-    ├── index.jsx
-├── .gitignore
-├── index.html
-├── package.json
-├── README.md
-├── vite.config.js
+newsblogreact
+  ├── node_modules
+  ├── public
+  │   ├── favicon.svg
+  │   └── assets
+        ├── images,svgs
+  └── src
+      ├── Components
+         ├── All-components
+      ├── Utils
+          ├── Data-utils
+      ├── App.css
+      ├── App.jsx
+      ├── index.css
+      ├── index.jsx
+  ├── .gitignore
+  ├── index.html
+  ├── package.json
+  ├── README.md
+  ├── vite.config.js
 ```
 
 ## Development
