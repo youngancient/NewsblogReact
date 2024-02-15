@@ -45,6 +45,17 @@ export const setVariants ={
       }
     }
   }
+export const oneVariants ={
+    initial :{
+      y: -30,
+    },
+    final: {
+      y: 0,
+      transition:{
+        duration: 0.7,
+      }
+    }
+  }
   export const pVariants ={
     final: {
       transition:{

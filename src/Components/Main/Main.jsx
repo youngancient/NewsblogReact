@@ -1,4 +1,4 @@
-import { pVariants, setVariants } from "../animation";
+import { oneVariants, pVariants, setVariants } from "../animation";
 import "./style.css";
 import { motion } from "framer-motion";
 
@@ -39,15 +39,28 @@ const Main = () => {
             </div>
             
           </div>
-          <div className="new">
+          <motion.div className="new"
+          animate="final"
+          variants={pVariants}
+          >
             <h2> New </h2>
-            <div className="one" style={{paddingTop: '0px'}}>
+            <motion.div className="one" style={{paddingTop: '0px'}}
+            initial="initial"
+            whileInView="final"
+            variants={oneVariants}
+            viewport={{once: true}}
+            >
               <a href="#">
                 <strong>Hydrogen VS Electric Cars</strong>
               </a>
               <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-            </div>
-            <div className="one">
+            </motion.div>
+            <motion.div className="one"
+             initial="initial"
+             whileInView="final"
+             variants={oneVariants}
+             viewport={{once: true}}
+            >
               <a href="#">
                 <strong>The Downsides of AI Artistry</strong>
               </a>
@@ -55,8 +68,13 @@ const Main = () => {
                 What are the possible adverse effects of on-demand AI image
                 generation?
               </p>
-            </div>
-            <div className="one" style={{ borderBottom: "0px" }}>
+            </motion.div>
+            <motion.div className="one" style={{ borderBottom: "0px" }}
+             initial="initial"
+             whileInView="final"
+             variants={oneVariants}
+             viewport={{once: true}}
+            >
               <a href="#">
                 <strong>Is VC Funding Drying Up?</strong>
               </a>
@@ -64,8 +82,8 @@ const Main = () => {
                 Private funding by VC firms is down 50% YOY. We take a look at
                 what that means.
               </p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
         <motion.div className="second"
         animate="final"

@@ -8,7 +8,7 @@
   background: hsl(36, 100%, 99%);
 }
 .popup {
-  position: absolute;
+  position: fixed;
   top: 0;
   display: grid;
   height: 100vh;
