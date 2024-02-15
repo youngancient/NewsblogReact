@@ -6,7 +6,6 @@ const Main = () => {
     { imgSource: '/assets/laptop.jpg',imgAlt : 'laptops', imgId: '02', boldText: 'Top 10 Laptops of 2022',pText : 'Our best picks for various needs and budgets.'},
     { imgSource: '/assets/gaming.jpg',imgAlt : 'gaming', imgId: '03', boldText: 'The Growth of Gaming',pText : 'How the pandemic has sparked fresh opportunities.'}
   ]
-  sets.forEach((ele)=>{console.log(ele)});
   return (
     <main>
       <div className="main">

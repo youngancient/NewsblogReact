@@ -22,6 +22,7 @@
 .btn button {
   height: 40px;
   width: 50%;
+  min-width: 150px;
   cursor: pointer;
   background: hsl(5, 85%, 63%);
   letter-spacing: 3px;
@@ -99,7 +100,14 @@ footer {
   text-align: center;
   font-size: 14px;
 }
-
+h1 {
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
 @media screen and (min-width: 768px) {
   /* main section */
   main {
@@ -184,6 +192,11 @@ footer {
   }
 }
 
+@media screen and (min-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
 @media screen and (min-width: 820px) {
   .logo {
     width: 40%;
@@ -203,7 +216,7 @@ footer {
     grid-gap: 2rem;
   }
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 4.5rem;
   }
   .text {
@@ -216,6 +229,7 @@ footer {
   }
   .btn button {
     height: 50px;
+    /* width: 45%; */
   }
   .new {
     padding: 1.5rem;

@@ -6,7 +6,6 @@
   height: 100vh;
   padding: 3rem;
   background: hsl(36, 100%, 99%);
-  transition: 2s;
 }
 .popup {
   position: absolute;
@@ -19,8 +18,6 @@
   overflow-x: hidden;
   backdrop-filter: blur(1px);
   background: hsla(200, 35%, 13%, 0.4);
-  transition: 2s;
-  
 }
 .mobile-links {
   display: flex;
@@ -36,14 +33,4 @@
 .cancel {
   display: flex;
   justify-content: end;
-}
-
-/* Javascript classes */
-.left {
-  transform: translateX(200%);
-  transition: 2s;
-}
-.hide {
-  display: none;
-  transition: 2s;
 }

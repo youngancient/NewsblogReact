@@ -1,6 +1,7 @@
 import "./style.css";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [isClicked,setClick] = useState(false);
@@ -29,7 +30,9 @@ const Header = () => {
           </div>
         </nav>
       </div>
-      <MobileMenu clicked = {isClicked} closeMenu={toggleMobileMenu} />
+      <AnimatePresence>
+      {isClicked && <MobileMenu clicked = {isClicked} closeMenu={toggleMobileMenu} key="kkk" />}
+      </AnimatePresence>
     </header>
   );
 };
