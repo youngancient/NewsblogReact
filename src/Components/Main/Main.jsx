@@ -1,4 +1,6 @@
+import { pVariants, setVariants } from "../animation";
 import "./style.css";
+import { motion } from "framer-motion";
 
 const Main = () => {
   const sets = [
@@ -32,7 +34,8 @@ const Main = () => {
               really fulfilling its promise?
             </p>
             <div className="btn">
-              <button>READ MORE</button>
+              <button
+              >READ MORE</button>
             </div>
             
           </div>
@@ -64,10 +67,18 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className="second">
+        <motion.div className="second"
+        animate="final"
+        variants={pVariants}
+        >
           {
             sets.map((set)=>(
-              <div className="set" key={set.imgId}>
+              <motion.div className="set" key={set.imgId}
+              initial="initial"
+              whileInView="final"
+              variants={setVariants}
+              viewport={{once: true}}
+              >
                 <div className="setimg">
                   <img src={set.imgSource} alt={set.imgAlt}/>
                 </div>
@@ -76,10 +87,10 @@ const Main = () => {
                   <a href="#"><strong>{set.boldText}</strong></a>
                   <p>{set.pText}</p>
                 </div>
-              </div>
+              </motion.div>
             ))
           }
-        </div>
+        </motion.div>
       </div>
     </main>
   );

@@ -33,3 +33,23 @@ export const PopupVariant ={
         },
       },
 }
+
+export const setVariants ={
+    initial :{
+      scale: 0.9
+    },
+    final: {
+      scale: 1,
+      transition:{
+        duration: 0.7,
+      }
+    }
+  }
+  export const pVariants ={
+    final: {
+      transition:{
+        staggerChildren: 0.65,
+        delayChildren: 0.5,
+      }
+    }
+  }
